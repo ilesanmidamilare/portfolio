@@ -10,25 +10,26 @@ const HeroText = () => {
   return (
     <div className="z-10 mt-20 text-center md:mt-40 md:text-left rounded-3xl bg-clip-text">
       {/* Desktop View */}
-      <div className="flex-col hidden md:flex c-space">
+      <div className="flex-col hidden md:flex ">  
+        {/* //c-space */}
         <motion.h1
-          className="text-4xl font-medium"
+          className="text-4xl font-extralight"
           variants={variants}
           initial="hidden"
           animate="visible"
           transition={{ delay: 1 }}
         >
-          - I&apos;m Damilare
+          Hi, I&apos;m Damilare
         </motion.h1>
         <div className="flex flex-col items-start">
           <motion.p
-            className="text-5xl font-medium text-neutral-300"
+            className="text-5xl font-bold text-white font-mtn mb-10 mt-2"
             variants={variants}
             initial="hidden"
             animate="visible"
             transition={{ delay: 1.2 }}
           >
-            A Frontend Developer <br /> Dedicated to Crafting
+            Frontend Developer <span className="text-orange-500">.</span>
           </motion.p>
           <motion.div
             variants={variants}
@@ -36,63 +37,53 @@ const HeroText = () => {
             animate="visible"
             transition={{ delay: 1.5 }}
           >
+            
+            <span className="font-semibold text-white text-3xl ">I specialize in building </span> 
             <FlipWords
               words={words}
-              className="font-black text-white text-8xl"
-            />
+              className="font-bold text-white text-3xl "
+            /><br/>
+            <span className="font-semibold text-white text-3xl ">web and mobile applications.</span>
           </motion.div>
-          <motion.p
-            className="text-4xl font-medium text-neutral-300"
-            variants={variants}
-            initial="hidden"
-            animate="visible"
-            transition={{ delay: 1.8 }}
-          >
-            Web & Mobile Applications
-          </motion.p>
+    
         </div>
+        
       </div>
       {/* Mobile View */}
       <div className="flex flex-col space-y-6 md:hidden">
         <motion.p
-          className="text-4xl font-medium"
+          className="text-2xl font-extralight mt-10"
           variants={variants}
           initial="hidden"
           animate="visible"
           transition={{ delay: 1 }}
         >
-          - I&apos;m Damilare
+          I&apos;m Damilare
         </motion.p>
         <div>
           <motion.p
-            className="text-5xl font-black text-neutral-300"
+            className="text-4xl font-black text-white font-mtn"
             variants={variants}
             initial="hidden"
             animate="visible"
             transition={{ delay: 1.2 }}
           >
-            A Frontend Developer <br /> Dedicated to Crafting
+            Frontend Developer <span className="text-orange-500">.</span>
           </motion.p>
           <motion.div
             variants={variants}
             initial="hidden"
             animate="visible"
             transition={{ delay: 1.5 }}
+            className="mt-5"
           >
+            <span className="font-semibold text-white text-1xl ">I specialize in building </span> 
             <FlipWords
               words={words}
-              className="font-bold text-white text-7xl"
-            />
+              className="font-bold text-white text-1xl"
+            /><br/>
+            <span className="font-semibold text-white text-1xl ">web and mobile applications.</span>
           </motion.div>
-          <motion.p
-            className="text-4xl font-black text-neutral300"
-            variants={variants}
-            initial="hidden"
-            animate="visible"
-            transition={{ delay: 1.8 }}
-          >
-            Web & Mobile Applications
-          </motion.p>
         </div>
       </div>
     </div>

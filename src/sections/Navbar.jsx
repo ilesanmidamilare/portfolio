@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "motion/react";
-import logo from "../../public/assets/logos/logo.svg"; // Assuming you have a logo image    
+// import logo from "../../public/assets/logos/logo.svg"; // Assuming you have a logo image   
+// import doc from "../../public/docs/damilare_Ilesanmi_cv.pdf" 
 
 function Navigation() {
   return (
@@ -11,19 +12,29 @@ function Navigation() {
         </a>
       </li> */}
       <li className="nav-li">
-        <a className="nav-link" href="#about">
+        <a className="nav-link font-semibold" href="#about">
           About
         </a>
       </li>
       <li className="nav-li">
-        <a className="nav-link" href="#work">
+        <a className="nav-link font-semibold" href="#projects">
           Projects
         </a>
       </li>
       <li className="nav-li">
-        <a className="nav-link" href="#contact">
+        <a className="nav-link font-semibold" href="#contact">
           Contact
         </a>
+      </li>
+
+      <li className="nav-li p-2 hover:bg-radial from-lavender to-royal rounded-md">
+        <motion.a className="nav-link font-light text-white text-xs flex-1 cursor-pointer" 
+            href="../docs/damilare_Ilesanmi_cv.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+          Resume
+        </motion.a>
       </li>
     </ul>
   );
@@ -36,7 +47,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between py-2 sm:py-0">
           <a
             href="/"
-            className="text-xl font-bold transition-colors text-neutral-400 hover:text-white"
+            className="text-xl font-bold transition-colors  hover:text-neutral-400 font-mtn"
           >
              {/* <img src={logo} alt="Logo" className='h-auto w-10' /> */}
              Dami

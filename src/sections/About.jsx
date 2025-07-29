@@ -4,8 +4,8 @@ import { Frameworks } from "../components/FrameWorks";
 const About = () => {
   // const grid2Container = useRef();
   return (
-    <section className="c-space section-spacing" id="about">
-      <h2 className="text-heading">About Me</h2>
+    <section className="c-space mt-20" id="about">
+      <h2 className="text-heading font-mtn">About Me</h2>
       <div className="grid grid-cols-1 gap-5 md:grid-cols-6 md:auto-rows-[18rem] mt-12">
         {/* Grid 1 */}
         {/* Add image with two variant, a monochrome and a colour. On hover on the monochrome image the coloured imade shows through where the mouse pointer is */}
@@ -15,10 +15,10 @@ const About = () => {
             className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]"
           />
           <div className="z-10">
-            <p className="headtext">Hi, I&apos;m Damilare</p>
-            <p className="subtext">
-              Over the last 4 years, I developed my frontend and backend dev
-              skills to deliver dynamic and software and web applications.
+            {/* <p className="headtext">Hi, I&apos;m Damilare</p> */}
+            <p className="subtext text-justify">
+    
+              <span className="font-bold text-white">Hi, I&apos;m Damilare</span>, a frontend developer skilled in building responsive and interactive web and mobile applications using <span className="text-white font-medium">JavaScript, TypeScript, React.js, </span>and <span className="text-white font-medium">React Native</span>. I develop fast, scalable UIs with <span className="text-white font-medium">TailwindCSS</span>. On the backend, I use <span className="text-white font-medium">Node.js, Mongodb</span> and <span className="text-white font-medium">Express.js</span> to build APIs and handle server logic. I&apos;m passionate about clean code, performance, and creating great user experiences.
             </p>
           </div>
           <div className="absolute inset-x-0 pointer-evets-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />

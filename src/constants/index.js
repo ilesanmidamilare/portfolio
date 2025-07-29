@@ -224,21 +224,28 @@ export const myProjects = [
 ];
 
 export const mySocials = [
-  {
-    name: "WhatsApp",
-    href: "",
-    icon: "/assets/socials/whatsApp.svg",
-  },
+  // {
+  //   name: "WhatsApp",
+  //   href: "",
+  //   icon: "/assets/socials/whatsApp.svg",
+  // },
   {
     name: "Linkedin",
-    href: "https://www.linkedin.com/in/ali-sanati/",
+    href: "https://www.linkedin.com/in/damilareilesanmi/",
     icon: "/assets/socials/linkedIn.svg",
   },
   {
     name: "Instagram",
-    href: "https://www.instagram.com/ali.sanatidev/reels/",
+    href: "https://www.instagram.com/sanmidami/",
     icon: "/assets/socials/instagram.svg",
   },
+
+  {
+    name: "X",
+    href: "https://www.x.com/sanmidami/",
+    icon: "/assets/socials/x.svg",
+  },
+
 ];
 
 export const experiences = [
