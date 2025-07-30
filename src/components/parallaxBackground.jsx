@@ -1,5 +1,4 @@
 import { motion, useScroll, useSpring, useTransform } from "motion/react";
-import pht from '../assets/mountain-2.png'
 
 const ParallaxBackground = () => {
   const { scrollYProgress } = useScroll();
