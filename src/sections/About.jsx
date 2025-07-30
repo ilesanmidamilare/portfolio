@@ -17,9 +17,9 @@ const About = () => {
           />
           <div className="z-10">
             {/* <p className="headtext">Hi, I&apos;m Damilare</p> */}
-            <p className=" text-sm md:text-base text-pretty text-justify text-white">
+            <p className=" text-sm md:text-base text-pretty text-justify text-white font-light">
     
-              <span className="font-bold text-white">Hi, I&apos;m Damilare</span>, a frontend developer skilled in building responsive and interactive web and mobile applications using <span className="text-white font-medium">JavaScript, TypeScript, React.js, </span>and <span className="text-white font-medium">React Native</span>. I develop fast, scalable UIs with <span className="text-white font-medium">TailwindCSS</span>. On the backend, I use <span className="text-white font-medium">Node.js, Mongodb</span> and <span className="text-white font-medium">Express.js</span> to build APIs and handle server logic. I&apos;m passionate about clean code, performance, and creating great user experiences.
+              <span className="font-bold italic text-white">Hi, I&apos;m Damilare</span>, a frontend developer skilled in building responsive and interactive web and mobile applications using <span className="text-white font-bold italic ">JavaScript, TypeScript, React.js, </span>and <span className="text-white font-bold italic ">React Native</span>. I develop fast, scalable UIs with <span className="text-white font-bold italic ">TailwindCSS</span>. On the backend, I use <span className="text-white font-bold italic ">Node.js, Mongodb</span> and <span className="text-white font-bold italic ">Express.js</span> to build APIs and handle server logic. I&apos;m passionate about clean code, performance, and creating great user experiences.
             </p>
           </div>
           <div className="absolute inset-x-0 pointer-evets-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
@@ -35,8 +35,8 @@ const About = () => {
               :
           
           <div className="z-10 w-[50%] ">
-            <p className="headText">Teck Stack</p>
-            <p className="subtext">
+            <p className="headText font-bold">Teck Stack</p>
+            <p className="text-sm md:text-base text-pretty text-white font-light">
               I specialize in build<br/>robust and scalable applications.
             </p>
           </div>}
