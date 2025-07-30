@@ -23,7 +23,7 @@ function Navigation() {
       </li>
 
       <li className="nav-li p-2 hover:bg-radial from-lavender to-royal rounded-md">
-        <motion.a className="nav-link font-semibold text-white text-xs flex-1 cursor-pointer " 
+        <motion.a className="nav-link font-semibol text-xs flex-1 cursor-pointer " 
             href="../docs/damilare_Ilesanmi_cv.pdf"
             target="_blank"
             rel="noopener noreferrer"
@@ -36,6 +36,7 @@ function Navigation() {
 }
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+   const [hovered, setHovered] = useState(false);
   return (
     <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-primary/40">
       <div className="mx-auto c-space max-w-5xl">
@@ -45,7 +46,14 @@ const Navbar = () => {
             className="text-xl font-bold transition-colors  hover:text-neutral-400 font-mtn"
           >
              
-             Dami
+             {/* Dami */}
+             <img 
+              src={hovered ? "assets/logos/orange-logo.svg" : "assets/logos/white-logo.svg"}  
+                className="w-6 h-6 group-hover:hidden" 
+                alt="default-logo"
+                onMouseEnter={() => setHovered(true)}
+                onMouseLeave={() => setHovered(false)}
+             />
           </a>
           <button
             onClick={() => setIsOpen(!isOpen)}

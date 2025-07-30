@@ -43,7 +43,7 @@ const HeroText = () => {
               words={words}
               className=" text-white text-xl font-mtn"
             /><br/>
-            <span className=" text-white text-xl ">mobile apps and website.</span>
+            <span className=" text-white text-xl ">mobile apps and websites.</span>
           </motion.div>
     
         </div>
