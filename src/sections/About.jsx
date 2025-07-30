@@ -1,8 +1,9 @@
 import CopyEmailButton from "../components/CopyEmailButton";
 import { Frameworks } from "../components/Frameworks";
+import { useMediaQuery } from "react-responsive";
 
 const About = () => {
-  // const grid2Container = useRef();
+  const isMobile = useMediaQuery({ maxWidth: 420 });
   return (
     <section className="c-space mt-20" id="about">
       <h2 className="text-heading font-mtn">About Me</h2>
@@ -16,7 +17,7 @@ const About = () => {
           />
           <div className="z-10">
             {/* <p className="headtext">Hi, I&apos;m Damilare</p> */}
-            <p className="subtext text-justify">
+            <p className=" text-sm md:text-base text-pretty text-justify text-white">
     
               <span className="font-bold text-white">Hi, I&apos;m Damilare</span>, a frontend developer skilled in building responsive and interactive web and mobile applications using <span className="text-white font-medium">JavaScript, TypeScript, React.js, </span>and <span className="text-white font-medium">React Native</span>. I develop fast, scalable UIs with <span className="text-white font-medium">TailwindCSS</span>. On the backend, I use <span className="text-white font-medium">Node.js, Mongodb</span> and <span className="text-white font-medium">Express.js</span> to build APIs and handle server logic. I&apos;m passionate about clean code, performance, and creating great user experiences.
             </p>
@@ -26,12 +27,21 @@ const About = () => {
         
         {/* Grid 2 */}
         <div className="grid-default-color grid-2 flex items-center justify-left">
-          <div className="z-10 w-[50%]">
+
+         
+          {isMobile ? <div className="z-10 w-[50%] ">
+            <p className="headText">Teck <br/> Stack</p>
+          </div>
+              :
+          
+          <div className="z-10 w-[50%] ">
             <p className="headText">Teck Stack</p>
             <p className="subtext">
               I specialize in build<br/>robust and scalable applications.
             </p>
-          </div>
+          </div>}
+
+
           <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
             <Frameworks />
           </div>

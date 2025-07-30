@@ -64,7 +64,7 @@ const Contact = () => {
         
         <div className="flex flex-col items-center w-full gap-2 mb-10">
           <h2 className="text-neutral-400 subtext font-mtn">Do you have a project</h2>
-          <p className="font-normal text-heading font-mtn">
+          <p className="font-normal text-heading font-mtn text-center ">
             Let’s work togerther!
           </p>
         </div>
