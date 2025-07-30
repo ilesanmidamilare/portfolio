@@ -10,10 +10,10 @@ const HeroText = () => {
   return (
     <div className="z-10 mt-20 text-center md:mt-40 md:text-left rounded-3xl bg-clip-text">
       {/* Desktop View */}
-      <div className="flex-col hidden md:flex ">  
+      <div className="flex-col hidden md:flex sm:justify-center">  
         {/* //c-space */}
         <motion.h1
-          className="text-4xl font-extralight"
+          className="headtext"
           variants={variants}
           initial="hidden"
           animate="visible"
@@ -23,7 +23,7 @@ const HeroText = () => {
         </motion.h1>
         <div className="flex flex-col items-start">
           <motion.p
-            className="text-5xl font-bold text-white font-mtn mb-10 mt-2"
+            className="font-bold text-white font-mtn mb-10 mt-2 text-heading"
             variants={variants}
             initial="hidden"
             animate="visible"
@@ -38,12 +38,12 @@ const HeroText = () => {
             transition={{ delay: 1.5 }}
           >
             
-            <span className="font-semibold text-white text-3xl ">I specialize in building </span> 
+            <span className=" text-white text-xl ">I specialize in building </span> 
             <FlipWords
               words={words}
-              className="font-bold text-white text-3xl "
+              className=" text-white text-xl font-mtn"
             /><br/>
-            <span className="font-semibold text-white text-3xl ">web and mobile applications.</span>
+            <span className=" text-white text-xl ">mobile apps and website.</span>
           </motion.div>
     
         </div>
@@ -52,7 +52,7 @@ const HeroText = () => {
       {/* Mobile View */}
       <div className="flex flex-col space-y-6 md:hidden">
         <motion.p
-          className="text-2xl font-extralight mt-10"
+          className="text-heading font-extralight mt-10"
           variants={variants}
           initial="hidden"
           animate="visible"
@@ -62,7 +62,7 @@ const HeroText = () => {
         </motion.p>
         <div>
           <motion.p
-            className="text-4xl font-black text-white font-mtn"
+            className="text-heading font-black text-white font-mtn"
             variants={variants}
             initial="hidden"
             animate="visible"
@@ -77,12 +77,12 @@ const HeroText = () => {
             transition={{ delay: 1.5 }}
             className="mt-5"
           >
-            <span className="font-semibold text-white text-1xl ">I specialize in building </span> 
+            <span className=" text-white text-heading ">I build </span> 
             <FlipWords
               words={words}
-              className="font-bold text-white text-1xl"
+              className=" text-white text-heading font-mtn"
             /><br/>
-            <span className="font-semibold text-white text-1xl ">web and mobile applications.</span>
+            <span className=" text-white text-heading ">mobile apps and websites.</span>
           </motion.div>
         </div>
       </div>

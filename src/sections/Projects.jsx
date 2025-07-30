@@ -70,7 +70,7 @@ const Projects = () => {
               </div>
 
               {/* larger screen */}
-              <div className="hidden md:block w-1/2 h-full  ml-auto justify-between md:flex flex-col p-">
+              <div className="hidden w-1/2 h-full  ml-auto justify-between md:flex flex-col p-">
                   <div className="pt-2">
                     <h2 className="text-end textheading">Featured Project</h2>
                     <h2 className="text-end subtext">Project Name</h2>

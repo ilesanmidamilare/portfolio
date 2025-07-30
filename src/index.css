@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: Mtn;
-  src: url("../public/assets/fonts/Mtn.ttf") format("woff2");
+  src: url("../assets/fonts/Mtn.ttf") format("woff2");
 }
 
 @theme {
@@ -75,7 +75,7 @@ body {
 }
 
 .text-heading {
-  @apply font-bold text-3xl md:text-4xl;
+  @apply text-3xl md:text-4xl;
 }
 
 .headtext {

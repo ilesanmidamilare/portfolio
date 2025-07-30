@@ -1,16 +1,11 @@
 import { useState } from "react";
 import { motion } from "motion/react";
-// import logo from "../../public/assets/logos/logo.svg"; // Assuming you have a logo image   
-// import doc from "../../public/docs/damilare_Ilesanmi_cv.pdf" 
+
 
 function Navigation() {
   return (
     <ul className="nav-ul">
-      {/* <li className="nav-li">
-        <a className="nav-link" href="#home">
-          Home
-        </a>
-      </li> */}
+      
       <li className="nav-li">
         <a className="nav-link font-semibold" href="#about">
           About
@@ -49,7 +44,7 @@ const Navbar = () => {
             href="/"
             className="text-xl font-bold transition-colors  hover:text-neutral-400 font-mtn"
           >
-             {/* <img src={logo} alt="Logo" className='h-auto w-10' /> */}
+             
              Dami
           </a>
           <button
