@@ -1,5 +1,7 @@
 import { OrbitingCircles } from "./OrbitingCircles";
 
+
+
 export function Frameworks() {
   const skills = [
     "javascript",
@@ -21,18 +23,21 @@ export function Frameworks() {
      
       <OrbitingCircles iconSize={70}>
         {skills.map((skill, index) => (
-          <Icon key={index} src={`../../public/assets/logos/${skill}.svg`} />
+          // <Icon key={index} src={`../../public/assets/logos/${skill}.svg`} />
+          <img  key={index} src={`../../public/assets/logos/${skill}.svg`} className="duration-200 rounded-sm hover:scale-110" />
         ))}
       </OrbitingCircles>
       <OrbitingCircles iconSize={40} radius={80} reverse speed={2}>
         {skills.reverse().map((skill, index) => (
-          <Icon key={index} src={`../../public/assets/logos/${skill}.svg`} />
+          // <Icon key={index} src={`../../public/assets/logos/${skill}.svg`} />
+          <img  key={index} src={`../../public/assets/logos/${skill}.svg`} className="duration-200 rounded-sm hover:scale-110" />
+
         ))}
       </OrbitingCircles>
     </div>
   );
 }
 
-const Icon = ({ src }) => (
-  <img src={src} className="duration-200 rounded-sm hover:scale-110" />
-);
+// const Icon = ({ src }) => (
+//   <img src={src} className="duration-200 rounded-sm hover:scale-110" />
+// );
