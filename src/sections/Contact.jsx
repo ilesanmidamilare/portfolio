@@ -51,7 +51,7 @@ const Contact = () => {
     }
   };
   return (
-    <section className="relative items-center c-space mt-20" id="#contact">
+    <section className="relative items-center c-space mt-20" id="#contact"  >
       <Particles
         className="absolute inset-0 -z-50"
         quantity={100}
