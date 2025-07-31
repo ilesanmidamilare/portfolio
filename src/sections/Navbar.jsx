@@ -23,7 +23,7 @@ function Navigation() {
       </li>
 
       <li className="nav-li p-2 hover:bg-radial from-lavender to-royal rounded-md">
-        <motion.a className="nav-link font-semibol text-xs flex-1 cursor-pointer " 
+        <motion.a className="nav-link font-semibold text-xs flex-1 cursor-pointer " 
             href="../docs/damilare_Ilesanmi_cv.pdf"
             target="_blank"
             rel="noopener noreferrer"
@@ -43,17 +43,15 @@ const Navbar = () => {
         <div className="flex items-center justify-between py-2 sm:py-0">
           <a
             href="/"
-            className="text-xl font-bold transition-colors  hover:text-neutral-400 font-mtn"
+            className="text-xl font-bold transition-colors hover:text-neutral-400 font-mtn"
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
           >
-             
-             {/* Dami */}
-             <img 
-              src={hovered ? "assets/logos/orange-logo.svg" : "assets/logos/white-logo.svg"}  
-                className="w-6 h-6 group-hover:hidden" 
-                alt="default-logo"
-                onMouseEnter={() => setHovered(true)}
-                onMouseLeave={() => setHovered(false)}
-             />
+            <img
+              src={hovered ? "/assets/logos/orange-logo.svg" : "/assets/logos/white-logo.svg"}
+              className="w-6 h-6"
+              alt="Site Logo"
+            />
           </a>
           <button
             onClick={() => setIsOpen(!isOpen)}
