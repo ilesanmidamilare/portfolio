@@ -7,7 +7,7 @@ export default defineConfig({
   preview: {
   host: true,
   port: 4173,
-  allowedHosts: ['portfolio-ic21.onrender.com'],
+  allowedHosts: ['damilareilesanmi.com'],
 }
 
 });
