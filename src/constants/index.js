@@ -242,7 +242,7 @@ export const mySocials = [
 
   {
     name: "X",
-    href: "https://www.x.com/sanmidami/",
+    href: "https://www.x.com/sanmidami",
     icon: "/assets/socials/x.svg",
   },
 

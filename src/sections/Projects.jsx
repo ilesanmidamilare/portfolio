@@ -18,6 +18,7 @@ const Projects = () => {
               src="assets/projects/accessories.jpg"
               className="w-full h-full object-cover absolute top-0 left-0 z-0"
               alt="Featured Project"
+              loading="lazy"
             />
           </div>
 
@@ -128,6 +129,7 @@ const Projects = () => {
               src="assets/projects/game-engine.jpg"
               className="w-full h-full object-cover absolute top-0 left-0 z-0"
               alt="Featured Project"
+              loading="lazy"
             />
           </div>
 
@@ -238,6 +240,7 @@ const Projects = () => {
               src="assets/projects/wordpress-theme.jpg"
               className="w-full h-full object-cover absolute top-0 left-0 z-0"
               alt="Featured Project"
+              loading="lazy"
             />
           </div>
 

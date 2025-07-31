@@ -24,13 +24,13 @@ export function Frameworks() {
       <OrbitingCircles iconSize={70}>
         {skills.map((skill, index) => (
           // <Icon key={index} src={`../../public/assets/logos/${skill}.svg`} />
-          <img  key={index} src={`assets/logos/${skill}.svg`} className="duration-200 rounded-sm hover:scale-110" />
+          <img  key={index} src={`assets/logos/${skill}.svg`} className="duration-200 rounded-sm hover:scale-110" loading="lazy" />
         ))}
       </OrbitingCircles>
       <OrbitingCircles iconSize={40} radius={80} reverse speed={2}>
         {skills.reverse().map((skill, index) => (
           // <Icon key={index} src={`../../public/assets/logos/${skill}.svg`} />
-          <img  key={index} src={`assets/logos/${skill}.svg`} className="duration-200 rounded-sm hover:scale-110" />
+          <img  key={index} src={`assets/logos/${skill}.svg`} className="duration-200 rounded-sm hover:scale-110" loading="lazy"/>
 
         ))}
       </OrbitingCircles>

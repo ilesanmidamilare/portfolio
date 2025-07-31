@@ -26,7 +26,8 @@ const ParallaxBackground = () => {
         <motion.div
           className="absolute inset-0 -z-40"
           style={{
-            backgroundImage: "url(assets/mountain-3.png)",
+            // backgroundImage: "url(assets/mountain-3.png)",
+            backgroundImage: "url(https://res.cloudinary.com/dhrohwpck/image/upload/v1753947651/mountain-3_xviefx.png)",
             backgroundPosition: "bottom",
             backgroundSize: "cover",
             y: mountain3Y,
@@ -36,7 +37,8 @@ const ParallaxBackground = () => {
         <motion.div
           className="absolute inset-0 -z-30"
           style={{
-            backgroundImage: "url(assets/planets.png)",
+            // backgroundImage: "url(assets/planets.png)",
+             backgroundImage: "url(https://res.cloudinary.com/dhrohwpck/image/upload/v1753947649/planets_w9hbvs.png)",
             backgroundPosition: "bottom",
             backgroundSize: "cover",
             x: planetsX,
@@ -46,7 +48,8 @@ const ParallaxBackground = () => {
         <motion.div
           className="absolute inset-0 -z-20"
           style={{
-            backgroundImage: "url(assets/mountain-2.png)",
+            // backgroundImage: "url(assets/mountain-2.png)",
+            backgroundImage: "url(https://res.cloudinary.com/dhrohwpck/image/upload/v1753947650/mountain-2_jgxfkf.png)",
             backgroundPosition: "bottom",
             backgroundSize: "cover",
             y: mountain2Y,
@@ -56,7 +59,8 @@ const ParallaxBackground = () => {
         <motion.div
           className="absolute inset-0 -z-10"
           style={{
-            backgroundImage: "url(assets/mountain-1.png)",
+            // backgroundImage: "url(assets/mountain-1.png)",
+            backgroundImage: "url(https://res.cloudinary.com/dhrohwpck/image/upload/v1753947650/mountain-1_gqyf9z.png)",
             backgroundPosition: "bottom",
             backgroundSize: "cover",
             y: mountain1Y,

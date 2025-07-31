@@ -60,9 +60,10 @@ const Navbar = () => {
             className="flex cursor-pointer text-neutral-400 hover:text-white focus:outline-none sm:hidden"
           >
             <img
-              src={isOpen ? "assets/close.svg" : "assets/menu.svg"}
+              src={isOpen ? "assets/close.svg" : "assets/menu.svg" }
               className="w-6 h-6"
               alt="toggle"
+              loading="lazy"
             />
           </button>
           <nav className="hidden sm:flex">
