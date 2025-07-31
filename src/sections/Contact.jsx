@@ -2,6 +2,9 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import Alert from "../components/Alert";
 import { Particles } from "../components/Particles";
+
+
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -51,7 +54,7 @@ const Contact = () => {
     }
   };
   return (
-    <section className="relative items-center c-space mt-20" id="#contact"  >
+    <section className="relative items-center c-space mt-20" id="contact">
       <Particles
         className="absolute inset-0 -z-50"
         quantity={100}
