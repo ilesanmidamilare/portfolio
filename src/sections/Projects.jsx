@@ -15,7 +15,7 @@ const Projects = () => {
             className="w-full md:w-6/10 h-[350px] bg-blue-500 rounded-3xl relative overflow-hidden"
           >
             <img
-              src="assets/projects/accessories.jpg"
+              src="https://res.cloudinary.com/dhrohwpck/image/upload/f_auto,q_auto,w_1600,dpr_auto/v1753948746/accessories_arddd1.jpg"
               className="w-full h-full object-cover absolute top-0 left-0 z-0"
               alt="Featured Project"
               loading="lazy"
@@ -126,7 +126,7 @@ const Projects = () => {
             className="w-full md:w-6/10 h-[350px] bg-blue-500 rounded-3xl relative overflow-hidden"
           >
             <img
-              src="assets/projects/game-engine.jpg"
+              src="https://res.cloudinary.com/dhrohwpck/image/upload/f_auto,q_auto,w_1600,dpr_auto/v1753948747/game-engine_cpns5y.jpg"
               className="w-full h-full object-cover absolute top-0 left-0 z-0"
               alt="Featured Project"
               loading="lazy"
@@ -237,7 +237,7 @@ const Projects = () => {
             className="w-full md:w-6/10 h-[350px] bg-blue-500 rounded-3xl relative overflow-hidden"
           >
             <img
-              src="assets/projects/wordpress-theme.jpg"
+              src="https://res.cloudinary.com/dhrohwpck/image/upload/f_auto,q_auto,w_1600,dpr_auto/v1753948746/wordpress-theme_vwg0ou.jpg"
               className="w-full h-full object-cover absolute top-0 left-0 z-0"
               alt="Featured Project"
               loading="lazy"
