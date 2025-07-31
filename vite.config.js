@@ -7,7 +7,7 @@ export default defineConfig({
   preview: {
   host: true,
   port: 4173,
-  allowedHosts: ['damilareilesanmi.com'],
+  allowedHosts: ['www.damilareilesanmi.com'],
 }
 
 });
