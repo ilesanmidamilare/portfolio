@@ -1,53 +1,49 @@
-import React, { useState } from "react";
-import ProjectDetails from "./ProjectDetails";
+import React from 'react'
+import {myProjects} from '../constants/index'
+import { motion, } from "motion/react";
 
-const Project = ({
-  title,
-  description,
-  subDescription,
-  href,
-  image,
-  tags,
-  setPreview,
-}) => {
-  const [isHidden, setIsHidden] = useState(false);
+const Project = () => {
   return (
     <>
-      <div
-        className="flex-wrap items-center justify-between py-10 space-y-14 sm:flex sm:space-y-0"
-        onMouseEnter={() => setPreview(image)}
-        onMouseLeave={() => setPreview(null)}
-      >
-        <div>
-          <p className="text-2xl">{title}</p>
-          <div className="flex gap-5 mt-2 text-sand">
-            {tags.map((tag) => (
-              <span key={tag.id}>{tag.name}</span>
-            ))}
-          </div>
-        </div>
-        <button
-          onClick={() => setIsHidden(true)}
-          className="flex items-center gap-1 cursor-pointer hover-animation"
-        >
-          Read More
-          <img src="assets/arrow-right.svg" className="w-5" />
-        </button>
-      </div>
-      <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full" />
-      {isHidden && (
-        <ProjectDetails
-          title={title}
-          description={description}
-          subDescription={subDescription}
-          image={image}
-          tags={tags}
-          href={href}
-          closeModal={() => setIsHidden(false)}
-        />
-      )}
-    </>
-  );
-};
+      {myProjects.map((project) => (
+        <motion.div key={project.id}
+          className="bg-cover bg-center h-90 w-full rounded-3xl relative mt-7 md:h-140"
+          style={{ backgroundImage: `url('${project.bgimg}')` }}>
+            <div className="absolute flex inset-0 bg-gradient-to-b from-indigo/20 to-indigo/100  rounded-3xl">
 
-export default Project;
+            <motion.div className="p-3 self-end sm:p-10"
+              whileHover={{ scale:  1.01}}
+              whileTap={{ scale: 0.95 }}
+            >
+              <div className="text-white font-bold headtext">{project.title}</div>
+              <div className="text-sm text-white md:text-base text-justify mt-5 mb-3">{project.description} </div>
+              
+              <div  className="flex flex-row gap-2">
+                {project.tags?.map((tag) => (
+                  <div key={tag.id} className="text-sand bg-sand/20 pr-1 pl-1  rounded-2xl">{tag?.name}</div>
+                ))}
+              </div>
+
+              <div className="flex gap-2 mt-5">
+                {project.githublink && (
+                  <motion.a href={project.githublink} target="_blank" rel="noopener noreferrer" className="text-white cursor-pointer bg-radial from-lavender to-royal p-1 pl-4 pr-4 rounded-3xl text-sm md:text-base"
+                  whileHover={{ y: -2 }}
+                  whileTap={{ scale: 1.05 }}
+                  >Github</motion.a>
+                )}
+                {project.demolink && (
+                  <motion.a href={project.demolink} target="_blank" rel="noopener noreferrer" className="text-white cursor-pointer bg-radial from-lavender to-royal p-1 pl-4 pr-4 rounded-3xl text-sm md:text-base"
+                    whileHover={{ y: -2 }}
+                    whileTap={{ scale: 1.05 }}
+                  >Live Demo</motion.a>
+                )}
+              </div>
+            </motion.div>
+
+            </div>
+      </motion.div>))}
+    </>
+  )
+}
+
+export default Project

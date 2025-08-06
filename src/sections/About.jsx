@@ -17,7 +17,6 @@ const About = () => {
           />
           <div className="z-10">
             <p className=" text-sm md:text-base text-pretty text-justify text-white">
-    
               <span className="font-bold italic text-white">Hi, I&apos;m Damilare</span>, a frontend developer skilled in building responsive and interactive web and mobile applications using <span className="text-white font-bold italic ">JavaScript, TypeScript, React.js, </span>and <span className="text-white font-bold italic ">React Native</span>. I develop fast, scalable UIs with <span className="text-white font-bold italic ">TailwindCSS</span>. On the backend, I use <span className="text-white font-bold italic ">Node.js, Mongodb</span> and <span className="text-white font-bold italic ">Express.js</span> to build APIs and handle server logic. I&apos;m passionate about clean code, performance, and creating great user experiences.
             </p>
           </div>

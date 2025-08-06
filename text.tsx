@@ -217,3 +217,73 @@ export default Projects;
 // };
 
 // export default Projects;
+
+
+    <motion.div className="relative "
+            whileHover={{ scale:  1.01}}
+            whileTap={{ scale: 0.95 }}
+          >
+            <div 
+              className="w-full h-90 md:h-140 bg-blue-500 rounded-3xl relative overflow-hidden h- "
+            >
+              <img
+                src="https://res.cloudinary.com/dhrohwpck/image/upload/f_auto,q_auto,w_1600,dpr_auto/v1754443708/Screenshot_2025-08-06_005726_sik9el.png"
+                className="w-full h-full object-cover absolute top-0 left-0 z-0"
+                alt="Featured Project"
+                loading="lazy"
+              />
+            </div>
+
+            <div className="absolute inset-0 m-auto h-full w-full rounded-xl flex bg-gradient-to-b from-indigo/40 to-indigo/100 
+              ">
+                <div className="self-end p-5">
+                  {/* p-10 */}
+                 
+                  <h2 className=" text-white font-bold">Princep Learning</h2>
+                 
+
+                  <div className="mt-3 mb-7 ">
+                    {/*   */}
+                    <div className=" text-justify text-sm md:text-base text-pretty ">
+                      Princep is a learning management system where instructors can upload and share educational videos. Students can browse available
+                      courses, make payments, and gain access to video content. The platform supports secure transactions, user roles, and a structured learning experience designed to connect learners with expert-created video tutorials across various subjects.
+                    
+                    </div>
+                    <div className="flex flex-row mt-2 gap-2 text-sand text-sm md:text-base text-pretty ">
+                      {/*  */}
+                      <span  className="p-1 pl-3 pr-3 rounded-3xl bg-sand/15">React </span>
+                      {/* p-1 pl-3 pr-3 rounded-3xl  bg-sand/15 */}
+                      <span className="p-1 pl-3 pr-3 rounded-3xl bg-sand/15">TailwindCSS</span>
+                      <span className="p-1 pl-3 pr-3 rounded-3xl bg-sand/15">Express</span>
+                      <span className="p-1 pl-3 pr-3 rounded-3xl bg-sand/15">MongoDB</span>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-5">
+                    <motion.a
+                      target="_blank"
+                      href=""
+                      rel="noopener noreferrer"
+                      className="cursor-pointer bg-radial from-lavender to-royal self-center text-center px-3 py-1 rounded-3xl text-sm md:text-base text-pretty"
+                      
+                      whileHover={{ y: -2 }}
+                      whileTap={{ scale: 1.05 }}
+                    
+                    >
+                      Github
+                    </motion.a>
+                    <motion.a 
+                      className="cursor-pointer bg-radial from-lavender to-royal self-center text-center px-3 rounded-3xl py-1 text-sm md:text-base text-pretty"
+                      target="_blank"
+                      href=""
+                      rel="noopener noreferrer"
+                      whileHover={{ y: -2 }}
+                      whileTap={{ scale: 1.05 }}
+                    >
+                      Live Demo
+                    </motion.a>
+                  </div>
+                  
+                </div>
+            </div>
+          </motion.div>
