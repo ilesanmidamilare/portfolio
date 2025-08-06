@@ -68,7 +68,7 @@ const HeroText = () => {
             animate="visible"
             transition={{ delay: 1.2 }}
           >
-            Frontend Developer <span className="text-orange-500">.</span>
+            Frontend Developer<span className="text-orange-500">.</span>
           </motion.p>
           <motion.div
             variants={variants}

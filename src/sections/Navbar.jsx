@@ -27,7 +27,7 @@ function Navigation() {
 
       <li className="nav-li p-2 hover:bg-radial from-lavender to-royal rounded-md">
         <motion.a className="nav-link font-semibold text-xs flex-1 cursor-pointer " 
-            href="../docs/damilare_Ilesanmi_cv.pdf"
+            href="../DAMILARE_ILESANMI_RESUME.pdf"
             target="_blank"
             rel="noopener noreferrer"
         >

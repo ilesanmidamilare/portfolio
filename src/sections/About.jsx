@@ -9,14 +9,13 @@ const About = () => {
       <h2 className="text-heading font-mtn">About Me</h2>
       <div className="grid grid-cols-1 gap-5 md:grid-cols-6 md:auto-rows-[18rem] mt-12">
         {/* Grid 1 */}
-        {/* Add image with two variant, a monochrome and a colour. On hover on the monochrome image the coloured imade shows through where the mouse pointer is */}
         <div className="flex items-end grid-default-color grid-1">
           <img
-            src="assets/coding-pov.png"
+            src="https://res.cloudinary.com/dhrohwpck/image/upload/f_auto,q_auto,w_1600,dpr_auto/v1753960327/coding-pov_slgryr.png"
             className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]"
+            loading="lazy"
           />
           <div className="z-10">
-            {/* <p className="headtext">Hi, I&apos;m Damilare</p> */}
             <p className=" text-sm md:text-base text-pretty text-justify text-white">
     
               <span className="font-bold italic text-white">Hi, I&apos;m Damilare</span>, a frontend developer skilled in building responsive and interactive web and mobile applications using <span className="text-white font-bold italic ">JavaScript, TypeScript, React.js, </span>and <span className="text-white font-bold italic ">React Native</span>. I develop fast, scalable UIs with <span className="text-white font-bold italic ">TailwindCSS</span>. On the backend, I use <span className="text-white font-bold italic ">Node.js, Mongodb</span> and <span className="text-white font-bold italic ">Express.js</span> to build APIs and handle server logic. I&apos;m passionate about clean code, performance, and creating great user experiences.
