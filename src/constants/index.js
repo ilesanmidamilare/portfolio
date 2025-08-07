@@ -35,10 +35,10 @@ export const myProjects = [
     id: 2,
     title: "Princep",
     description:
-      "Princep is a learning management system where instructors can upload and share educational videos. Students can browse availablecourses, make payments, and gain access to video content. The platform supports secure transactions, user roles, and a structured learning experience designed to connect learners with expert-created video tutorials across various subjects.",
+      "Princep is a learning management system where instructors can upload and share educational videos. Students can browse available courses, make payments, and gain access to video content. The platform supports secure transactions, user roles, and a structured learning experience designed to connect learners with expert-created video tutorials across various subjects.",
     
-      githublink: "/",
-      demolink: "/",
+      githublink: "https://github.com/ilesanmidamilare/Princep-Learning",
+      demolink: "https://princep-client.onrender.com",
       bgimg: "https://res.cloudinary.com/dhrohwpck/image/upload/v1754443708/f_auto,q_auto,w_1600,dpr_auto/Screenshot_2025-08-06_005726_sik9el.png",
       tags: [
         {
@@ -80,7 +80,7 @@ export const myProjects = [
       },
       {
         id: 2,
-        name: "Express",
+        name: "Paypal",
       },
       {
         id: 3,
@@ -89,7 +89,7 @@ export const myProjects = [
       },
       {
         id: 4,
-        name: "Tanstack",
+        name: "Typescript",
         
       },
     ],
