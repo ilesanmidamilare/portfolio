@@ -1,4 +1,4 @@
-import React from 'react'
+
 import {myProjects} from '../constants/index'
 import { motion, } from "motion/react";
 
@@ -9,7 +9,10 @@ const Project = () => {
         <motion.div key={project.id}
           className="bg-cover bg-center h-90 w-full rounded-3xl relative mt-7 md:h-140"
           style={{ backgroundImage: `url('${project.bgimg}')` }}>
-            <div className="absolute flex inset-0 bg-gradient-to-b from-indigo/20 to-indigo/100  rounded-3xl">
+            <div className="absolute flex inset-0 
+              bg-gradient-to-b from-indigo/60 to-indigo/100 rounded-3xl
+              md:bg-gradient-to-b md:from-indigo/20 md:to-indigo/100
+              ">
 
             <motion.div className="p-3 self-end sm:p-10"
               whileHover={{ scale:  1.01}}
@@ -35,7 +38,8 @@ const Project = () => {
                   <motion.a href={project.demolink} target="_blank" rel="noopener noreferrer" className="text-white cursor-pointer bg-radial from-lavender to-royal p-1 pl-4 pr-4 rounded-3xl text-sm md:text-base"
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 1.05 }}
-                  >Live Demo</motion.a>
+                  >Live Demo
+                  </motion.a>
                 )}
               </div>
             </motion.div>

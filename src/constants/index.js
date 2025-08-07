@@ -5,8 +5,8 @@ export const myProjects = [
     description:
       "Eazyfit is a fashion tech platform that connects customers with verified fashion designers for custom made clothing. Users can upload outfit ideas, get bids from stylists, chat, take measurements through video or paid home visits, place orders, and pay all within the app.",
    
-    githublink: "/",
-    demolink: "/",
+    githublink: "",
+    demolink: "https://res.cloudinary.com/dhrohwpck/video/upload/v1754518631/Eazyfit_Demo_inoujb.mp4",
     bgimg: "https://res.cloudinary.com/dhrohwpck/image/upload/f_auto,q_auto,w_1600,dpr_auto/v1754450270/eazyfit_jlp35t.png",
     tags: [
       {
